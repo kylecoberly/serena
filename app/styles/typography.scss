@@ -1,0 +1,23 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+@mixin base-font {
+	font-family: "Roboto", sans-serif;
+	color: $black;
+}
+
+@mixin primary-header-font {
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+@mixin secondary-header-font {
+	font-size: 2rem;
+	font-weight: 300;
+	margin-bottom: 2rem;
+}
+
+@mixin body-font {
+}
+
+@mixin accent-font {
+}

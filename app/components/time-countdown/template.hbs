@@ -1,0 +1,6 @@
+{{#if error}}
+	<p class="error">There was an error processing the time</p>
+{{else}}
+	<time class="minutes-remaining">{{minutesRemaining}}</time>
+	<progress max="{{maxTime}}" value="{{secondsRemaining}}" class="seconds-remaining"></progress>
+{{/if}}

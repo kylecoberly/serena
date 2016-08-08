@@ -1,0 +1,8 @@
+<section class="train-times">
+	<h2>Minutes Until A-Line Leaves</h2>
+	{{time-countdown
+		targetTime=model.nextStopDateTime
+		currentTime=model.clock.currentDateTime
+		maxTime=model.currentInterval
+	}}
+</section>

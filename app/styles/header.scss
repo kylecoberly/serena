@@ -1,0 +1,10 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+	background-color: $dark-grey;
+	color: $white;
+	time {
+		display: block;
+	}
+}

@@ -1,0 +1,19 @@
+body {
+	@include base-font;
+}
+
+h1 {
+	@include primary-header-font;
+}
+h2 {
+	@include secondary-header-font;
+}
+section {
+	position: relative;
+	max-width: 60rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column nowrap;
+}
