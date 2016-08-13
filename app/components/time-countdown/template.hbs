@@ -2,5 +2,5 @@
 	<p class="error">There was an error processing the time</p>
 {{else}}
 	<time class="minutes-remaining">{{minutesRemaining}}</time>
-	<progress max="{{maxTime}}" value="{{secondsRemaining}}" class="seconds-remaining"></progress>
+	<progress max="{{maxTime}}" value="{{secondsRemaining}}" class="seconds-remaining {{if isBikeCutoff 'alert'}}"></progress>
 {{/if}}

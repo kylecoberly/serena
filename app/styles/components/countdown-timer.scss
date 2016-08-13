@@ -2,7 +2,7 @@
 	width: 100%;
 	display: flex;
 	.error {
-		color: red;
+		color: $alert-color;
 	}
 	.minutes-remaining {
 		font-size: 4rem;
@@ -20,6 +20,9 @@
 		}
 		&::-webkit-progress-value {
 			background-color: $primary-color;
+		}
+		&.alert::-webkit-progress-value {
+			background-color: $alert-color;
 		}
 	}
 }

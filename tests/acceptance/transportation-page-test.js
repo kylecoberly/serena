@@ -23,3 +23,11 @@ test("It should tell me the time of the next train", function(assert) {
 		assert.ok(find(".minutes-remaining").text(), "Train time displays");
 	});
 });
+
+test("It should tell how quickly it will take to get to Central Park various ways", function(assert) {
+	visit("/transportation/1");
+
+	andThen(function() {
+		assert.equal(find(".transportation-overhead").length(), 4, "Has 4 methods for getting to the station");
+	});
+});

@@ -5,6 +5,13 @@ export default Ember.Component.extend({
 	tagName: "div",
 	classNames: ["countdown-timer"],
 	error: false,
+	isBikeCutoff: Ember.computed("minutesRemaining", function(){
+		if (this.get("minutesRemaining") <= 6){
+			return true;
+		} else {
+			return false;
+		}
+	}),
 	minutesRemaining: Ember.computed("timeRemaining", function(){
 		if (!this.get("error")){
 			return Math.ceil(Time.millisecondsToMinutes(this.get("timeRemaining")));

@@ -1,2 +1,13 @@
 .train-times {
+	.transportation-overhead {
+		margin-top: 1rem;
+		padding: 1rem;
+		th {
+			font-weight: 700;
+			text-align: right;
+		}
+		td {
+			padding-left: 1rem;
+		}
+	}
 }
