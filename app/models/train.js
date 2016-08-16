@@ -13,7 +13,7 @@ export default Model.extend({
 	previousStopClockTime: Ember.computed("stopTimes.@each", function(){
 	   	return this.get("stopTimes.lastObject");
 	}),
-	currentInterval: Ember.computed("nextStopClockTime", function(){
+	currentInterval: Ember.computed("clock.currentDateTime", function(){
 		var nextTime = this.get("nextStopClockTime");
 		var previousTime = this.get("previousStopClockTime");
 		if (Time.isClockTimeGreater(nextTime, previousTime)){
